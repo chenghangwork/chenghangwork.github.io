@@ -52,6 +52,7 @@ h2 {
 .tm-border {
 	border: 5px solid #fff;
 	box-shadow: 2px 2px #000;
+  max-width: 160px;
 }
 
 .shadow {
