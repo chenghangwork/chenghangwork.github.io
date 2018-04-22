@@ -1,0 +1,96 @@
+@charset "utf-8";
+
+/* reset */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,textarea,p,blockquote,th,td,input,select,textarea,button {margin:0;padding:0}  /* 初始化标签在所有浏览器中的margin、padding值 */
+header,footer,section,article,aside,nav,hgroup,address,figure,figcaption,menu,details{display:block;} 	/*设置H5成为块级元素*/
+table {width:100%;border-collapse:collapse;border-spacing:0;table-layout:fixed;}    /* 重置table属性 设置列表边框为0 */
+caption,th{text-align:left;font-weight:normal;}
+html,body,fieldset,img,iframe,abbr{border:0;} /* 设置元素边框为0 */
+i,cite,em,var,address,dfn{font-style:normal;} /* 设置行内元素没有边框 */
+[hidefocus],summary{outline:0;}
+h1,h2,h3,h4,h5,h6,small{font-size:100%;} /* 设置H1-H6字体为默认大小 */
+sup,sub{font-size:83%;} 	/* 设置元素上下标字体为83% */
+pre,code,kbd,samp{font-family:inherit;} 	/* 自定义标签 继承父元素 */
+textarea{overflow:auto;resize:none;}
+label,summary{cursor:default;}
+a,button{cursor:pointer;}
+h1,h2,h3,h4,h5,h6,em,strong,b{font-weight:bold;}
+del,ins,u,s,a,a:hover{text-decoration:none;}
+body,textarea,input,button,select,keygen,legend{font:100%/1.14 arial,\5b8b\4f53;color:#333;outline:0;}
+body{background:#fff;}
+a,a:hover{color:#333;}
+
+fieldset,img {border:0 none}  /* 重置fieldset（表单分组）、图片的边框为0*/
+dl,ul,ol,menu,li {list-style:none}   /* 重置类表前导符号为onne,menu在HTML5中有效 */
+blockquote, q {quotes: none}   /* 重置嵌套引用的引号类型 */
+blockquote:before, blockquote:after,q:before, q:after {content:'';content:none}  /* 重置嵌套引用*/
+input,select,textarea,button {vertical-align:middle}  /* 重置表单控件垂直居中*/
+button {border:0 none;background-color:transparent;cursor:pointer}  /* 重置表单button按钮效果 */
+body {background:#fff}   /* 重置body 页面背景为白色 */
+body,th,td,input,select,textarea,button {/* font-size:10px; */line-height:1 ;font-family:"微软雅黑", "黑体","宋体";color:#666} /* 重置页面文字属性 */
+a {color:#666;text-decoration:none}  /* 重置链接a标签 */
+a:active, a:hover {text-decoration:none}   /* 重置链接a标签的鼠标滑动效果 */
+address,caption,cite,code,dfn,em,var {font-style:normal;font-weight:normal}  /* 重置样式标签的样式 */
+caption {display:none;}    /* 重置表格标题为隐藏 */
+img{
+	border: none;
+	vertical-align: top
+}  /* 图片在当前行内的垂直位置 */
+
+/* 页面设置 */
+
+  /* 取消a标签点击后的虚线框 */
+a {outline: none;}
+a:active {star:expression(this.onFocus=this.blur());}
+a:hover{text-decoration:none !important;}
+
+
+ /* 设置页面文字等在拖动鼠标选中情况下的背景色与文字颜色 */
+/*
+::selection {color: #fff;background-color: #4C6E78;}
+::-moz-selection {color: #fff;background-color: #4C6E78;}
+*/
+html{ box-sizing: border-box; }/* 继承box-sizing */
+*,*:before,*:after{ box-sizing: inherit; }
+
+.dis-in-b li{display: inline-block;}/* 设置ul下li为行内块元素 */
+.lf{float: left;} 	/* 设置元素左浮动 */
+.rt{float: right;} 	/* 设置元素右浮动 */
+.clear{clear: both;} 	/* 设置元素清除浮动 */
+.center{text-align:center;} 	/* 设置元素内行内居中 */
+
+.calendar{ table-layout: fixed; } 	/* 表格单元格等宽 */
+.disabled { pointer-events: none; } 	/* css3禁用鼠标事件 */
+.blur{ color: transparent; text-shadow: 0 0 5px rgba(0, 0, 0, 0.5); }
+.red{ border: 1px solid #FF0000; border-radius: 2px;}
+
+
+/* 页面所有一切都垂直居中 */
+/*
+	html, body { height: 100%; margin: 0; }
+	body { -webkit-align-items: center; -ms-flex-align: center; align-items: center; display: -webkit-flex; display: flex;}
+ */
+
+
+.logo { background: url("logo.svg"); }
+
+/*
+	圆形
+ */
+.circular{ width: 28px; height: 28px; border-radius: 50%; background-color: red;}
+/*
+	六边形			兼容低版本
+ */
+.Hexagon{ width: 30px; height: 40px; background-color: #248bc2; position: relative;}
+.HexagonRight{ width: 0; height: 0; position: absolute; right: -15px; top: 0; border-left: 15px solid #248bc2; border-top: 20px solid transparent; border-bottom: 20px solid transparent;}
+.HexagonLeft{ width: 0; height: 0; position: absolute; left: -15px; top: 0; border-right: 15px solid #248bc2; border-top: 20px solid transparent; border-bottom: 20px solid transparent;}
+/*
+	六边形			不兼容低版本
+ */
+.Lanren{ width: 66px; height: 120px; margin: 100px auto; background-color: #008000; position: relative;}
+.Lanren::before{ content: ""; width: 0; height: 0; position: absolute; left: -35px; top: 0; border-right: 35px solid #008000; border-top: 60px solid transparent; border-bottom: 60px solid transparent;}
+.lanren::after { content: ""; width: 0; height: 0; position: absolute; right: -35px; top: 0; border-left: 35px solid #008000; border-top: 60px solid transparent; border-bottom: 60px solid transparent;}
+/*
+	三角形
+*/
+.Triangle{ width: 0; height: 0; border-top: 15px solid transparent; border-bottom: 15px solid transparent; position: absolute; top: 0; right: 0; border-right: 30px solid #fff;}

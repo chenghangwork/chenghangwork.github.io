@@ -1,0 +1,247 @@
+body {
+  background-color: #f5f5f5;
+}
+.hide {
+  display: none !important;
+}
+.top {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 40px;
+  height: 40px;
+}
+.logo {
+  height: 70px;
+  line-height: 70px;
+  float: left;
+  border: 1px solid #ccc;
+}
+.header_nav {
+  background-color: #1E90FF;
+  text-align: right;
+}
+.header_nav a {
+  display: inline-block;
+  text-align: center;
+  height: 70px;
+  line-height: 70px;
+  font-size: 22px;
+  color: #fff;
+  margin-left: 20px;
+}
+.header_nav a:nth-child(7) {
+  margin-right: 20px;
+}
+.header_nav a:hover {
+  color: #e5e5e5;
+}
+.header_banner {
+  width: 100%;
+  height: 550px;
+}
+.header_banner img {
+  width: 100%;
+  max-height: 100%;
+}
+#company_box {
+  padding-top: 60px;
+}
+#company_box h3 {
+  margin: 0 auto;
+  text-align: center;
+  background: #fff;
+  width: 160px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 8px;
+  font-weight: normal;
+  font-size: 20px;
+}
+#company_box li {
+  text-align: center;
+  font-size: 16px;
+  color: #646464;
+  margin: 20px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  line-height: 2;
+}
+#company_box li:nth-child(3) {
+  background-color: #f5f5f5;
+  padding: 0;
+}
+#company_box .skill_box div {
+  width: 49%;
+  padding: 10px;
+  background-color: #fff;
+  font-size: 14px;
+  border-radius: 12px;
+  text-align: left;
+}
+#company_box .skill_box div:nth-child(3) {
+  margin: 8px 0;
+}
+#about_box {
+  display: flex;
+  display: -webkit-flex;
+  /* Safari */
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: burlywood;
+}
+#about_box h3 {
+  color: #fff;
+  font-size: 40px;
+  padding: 0   40px;
+  line-height: 2;
+}
+#about_box div {
+  padding: 20px;
+  font-size: 18px;
+  color: #f5f5f5;
+  line-height: 3;
+}
+#about_box div p {
+  margin-bottom: 20px;
+}
+#service_box {
+  display: flex;
+  display: -webkit-flex;
+  /* Safari */
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+#service_box .weServer {
+  width: 96%;
+  margin: 0 auto;
+}
+#service_box .weServer h2 {
+  color: #000;
+  font-size: 32px;
+  margin-bottom: 60px;
+  text-align: center;
+  letter-spacing: 3px;
+  line-height: 60px;
+}
+#service_box .weServer li {
+  float: left;
+  width: 22%;
+  background-color: #fff;
+  margin: 1%;
+  text-align: center;
+  padding: 70px 39px 38px;
+}
+#service_box .weServer li img {
+  height: 76px;
+  margin-bottom: 35px;
+  vertical-align: middle;
+}
+#service_box .weServer li h3 {
+  color: #39335b;
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 12px;
+  letter-spacing: 2px;
+  font-weight: 400;
+}
+#service_box .weServer li p {
+  color: #7782aa;
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 26px;
+}
+#Caselist_box {
+  display: table;
+  background: #e5e5e5;
+  width: 100%;
+}
+#Caselist_box h3,
+#Caselist_box div {
+  height: 14.28571429%;
+  line-height: 14.28571429%;
+  text-align: center;
+}
+#Caselist_box h3 i,
+#Caselist_box div i {
+  font-size: 44px;
+}
+#Caselist_box h3 {
+  font-size: 34px;
+}
+#Caselist_box .liuchengBox {
+  display: table-cell;
+  vertical-align: middle;
+}
+#chat_box {
+  background: #84c1ff;
+  display: flex;
+  display: -webkit-flex;
+  /* Safari */
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+#chat_box .chat_box {
+  width: 750px;
+}
+#chat_box .chat_box .iwant {
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+  font-weight: normal;
+}
+#chat_box .chat_box .iwant h2 {
+  font-size: 32px;
+}
+#chat_box .chat_box .leix {
+  display: flex;
+  flex: 1;
+  text-align: center;
+}
+#chat_box .chat_box .leix a {
+  flex-direction: row;
+  width: 20%;
+  background-color: #84c1ff;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 20px;
+}
+#chat_box .chat_box .leix a img {
+  display: block;
+  margin: 0 auto;
+}
+#chat_box .chat_box li {
+  margin: 20px 0;
+}
+#chat_box .chat_box input {
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  padding-left: 20px;
+}
+#chat_box .chat_box select {
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+}
+#chat_box .chat_box .subm {
+  background: #a6ffff;
+  color: #fff;
+  font-size: 18px;
+}
